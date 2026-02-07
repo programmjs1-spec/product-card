@@ -4,12 +4,12 @@
   font-family: Montserrat, sans-serif;
 }
 
-.body{
+.body {
   margin: 0;
   display: flow-root;
 }
 
-.title{
+.title {
   font-weight: 400;
   font-size: 70px;
   margin: 220px auto 110px;
