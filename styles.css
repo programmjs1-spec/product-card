@@ -16,6 +16,20 @@
   text-align: center;
 }
 
+.buttons {
+  position: absolute;
+  top: 5px;
+  left: 0;
+}
+
+.green_bg {
+  background-color: green;
+}
+
+.bg_yellow{
+  background-color: yellow;
+}
+
 .bg-dandelions {
   position: absolute;
   margin-top: 0;
