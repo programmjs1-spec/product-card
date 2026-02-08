@@ -1,4 +1,4 @@
-*{
+* {
   box-sizing: border-box;
   color: #515076;
   font-family: Montserrat, sans-serif;
@@ -14,6 +14,20 @@
   font-size: 70px;
   margin: 220px auto 110px;
   text-align: center;
+}
+
+.buttons {
+  position: absolute;
+  top: 5px;
+  left: 0;
+}
+
+.green_bg {
+  background-color: green;
+}
+
+.yellow_bg {
+  background-color: yellow;
 }
 
 .bg-dandelions {
