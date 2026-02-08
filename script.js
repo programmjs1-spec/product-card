@@ -50,5 +50,5 @@ contentTitle.addEventListener('mouseover', function () {
 const recolorButton = document.querySelector('#recolor-button');
 
 recolorButton.addEventListener('click', event => {
-  recolorButton.classList.toggle("bg_yellow");
+  recolorButton.classList.toggle("yellow_bg");
 });
