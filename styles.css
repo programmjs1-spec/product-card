@@ -1,45 +1,38 @@
 *{
-  margin: 0;
-  padding: 0;
-  font-family: Montserrat, sans-serif;
-  color: #515076;
-}
-
-.body{
   box-sizing: border-box;
-  width: 1280px;
-  color: #FFFFFF;
-  justify-content: center;
-  margin: 0 auto  ;
+  color: #515076;
+  font-family: Montserrat, sans-serif;
 }
 
-.bg-dandelions{
-  justify-content: center;
-  background: url("/images/bg-dandelions.png");
-  background-repeat: no-repeat;
-  width: 790px;
-  height: 697px;
-  margin-top: 0;
-  margin-left: 85px;
-  position: absolute; 
+.body {
+  margin: 0;
+  display: flow-root;
 }
 
-.title{
-  width: 846px;
-  margin: 220px 110px 110px;
+.title {
   font-weight: 400;
   font-size: 70px;
-  height: 78px;
-  justify-content: center;
+  margin: 220px auto 110px;
   text-align: center;
-  color: #515076;
+}
+
+.bg-dandelions {
+  position: absolute;
+  margin-top: 0;
+  margin-left: 85px;
+  z-index: -1;
+}
+
+.bg-dandelions__img {
+  width: 790px;
+  height: 697px;
 }
 
 .product-card__wrapper {
   display: flex;
-  width: 1110px;
-  gap: 45px;
   flex-wrap: wrap;
+  gap: 45px;
+  width: 1110px;
   justify-content: center;
   margin: 0 auto;
 }
@@ -54,13 +47,13 @@
 }
 
 .product-card__image {
-  width: 290px;
-  height: 245px;
+  min-width: 290px;
+  min-height: 245px;
   margin-bottom: 30px;
 }
 
 .product-card__skin-type {
-  height: 24px;
+  min-height: 24px;
   font-size: 12px;
   font-weight: 400;
   text-transform: uppercase;
@@ -69,36 +62,35 @@
 }
 
 .product-card__name {
-  height: 27px;
+  min-height: 27px;
   font-size: 20px;
-  font-weight: 700px;
+  font-weight: 700;
   margin-bottom: 5px;
 }
 
 .product-card__description {
-  height: 36px;
+  min-height: 36px;
   font-size: 13px;
-  font-weight: 400px;
+  font-weight: 400;
   margin-bottom: 15px;
 }
 
 .product-card__all-ingridients {
   box-sizing: border-box;
-  width: 252px;
-  height: 87px;
+  min-width: 252px;
+  min-height: 87px;
   margin-bottom: 25px;
 }
 
 .product-card__ingridients {
-  width: 49;
-  height: 18;
+  min-height: 18px;
   font-weight: 400;
   font-size: 13px;
   margin-bottom: 5px;
 }
 
 .product-card__item {
-  height: 18;
+  min-height: 18px;
   font-weight: 400;
   font-size: 13px;
   margin-bottom: 5px;
@@ -112,12 +104,12 @@
 }
 
 .product-card__price-text {
-  height: 24px;
+  min-height: 24px;
   font-size: 20px;
-  font-weight: bold;
+  font-weight: 700;
 }
 
 .product-card__price {
-  height: 24px;
+  min-height: 24px;
   font-size: 20px;
 }
