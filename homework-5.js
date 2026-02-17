@@ -24,19 +24,19 @@ compareWithLightSpeed(300000000);
 
 // 3.Переменная с названием товара и ценой со встроенной функцией для сравнения бюджета с ценой товара
 
-let bookName = "Книга Единобожия";
-let bookPrice = 600;
+let productName = "Книга Единобожия";
+let productPrice = 600;
 
-function buyBook(budget) {
-  if (budget >= bookPrice) {
-    console.log(`Товар ${bookName} приобретён. Спасибо за покупку!`);
+function buyProduct(budget) {
+  if (budget >= productPrice) {
+    console.log(`Товар ${productName} приобретён. Спасибо за покупку!`);
   } else {
-    console.log(`Вам не хватает ${bookPrice}, пополните баланс`);
+    console.log(`Вам не хватает ${productPrice-budget}, пополните баланс`);
   }
 }
-buyBook(700);
-buyBook(500);
-buyBook(600);
+buyProduct(700);
+buyProduct(500);
+buyProduct(600);
 
 // 4. Функция с именованием
 
@@ -48,10 +48,3 @@ function buyCar() {
 let laptop = "Ноутбук Acer";
 let furniture = "Шкаф";
 const dishes = "Стакан";
-
-
-
-
-
-
-
