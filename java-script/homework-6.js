@@ -24,21 +24,21 @@ car.owner = person;
 
 // 3. Функция проверки максимальной скорости
 
-function checkMaxSpeed(car) {
+function addMaxSpeed(car) {
   if ("maxSpeed" in car) {
     return;
   } else {
     car.maxSpeed = 220;
   }
 }
-checkMaxSpeed(car);
+addMaxSpeed(car);
 
 // 4. Функция вывода свойства объекта
 
-function getObjectProperty(obj, propertyName) {
+function showObjectProperty(obj, propertyName) {
   console.log(obj[propertyName]);
 }
-getObjectProperty(car, "model")
+showObjectProperty(car, "model")
 
 // 5. Массив, который содержит название продуктов.
 
@@ -99,7 +99,7 @@ const allBooks = [...religiousBooks, ...historyBooks];
 
 // 8. Функция с map (добавление isRare)
 
-function addIsRareProperty(bookArray) {
+function getRareBooks(bookArray) {
   return bookArray.map(book => {
     return {
       ...book,
@@ -107,5 +107,5 @@ function addIsRareProperty(bookArray) {
     };
   });
 }
-const updatedBooks = addIsRareProperty(allBooks);
+const updatedBooks = getRareBooks(allBooks);
 console.log(updatedBooks);
