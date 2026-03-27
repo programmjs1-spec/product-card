@@ -9,8 +9,8 @@ console.log(filteredNumbers);
 // 2.Создание массива строк и проверка есть ли в массиве какая-то определенная сущность.
 
 const furniture = [ "Sofa", "Wardrobe", "Armchair", "Table", "Chair"];
-const checkFurniture = furniture.includes("Wardrobe");
-console.log(checkFurniture);
+const hasWardrobe = furniture.includes("Wardrobe");
+console.log(hasWardrobe);
 
 // 3.Функция, которая изменяет порядок массива на противоположный.
 
@@ -29,19 +29,19 @@ console.log(comEmails);
 
 // 5.Перебрать массив таким образом, что бы пользователи с id меньше или равно 5 имели postId: 2, а те, у кого id больше 5, имели postId: 1.
 
-const sortingIds = socialMediaComments.map(comment => ({
+const updatedСomments = socialMediaComments.map(comment => ({
   ...comment,
   postId: comment.id <= 5 ? 2 : 1
 }));
-console.log(sortingIds);
+console.log(updatedСomments);
 
 // 6.Перебрать массив, что бы объекты состояли только из айди и имени.
 
-const idAndNames = socialMediaComments.map(comment => ({
+const commentNames = socialMediaComments.map(comment => ({
   id: comment.id,
   name: comment.name
 }));
-console.log(idAndNames);
+console.log(commentNames);
 
 // 7. Перебираем массив, добавляем объектам свойство isInvalid и проверяем: если длина тела сообщения (body) больше 180 символов - устанавливаем true, меньше - false.
 
