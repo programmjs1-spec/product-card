@@ -61,7 +61,3 @@ function renderProducts(products, count) {
 
 const count = getCardsCount();
 renderProducts(products, count);
-
-
-
-
