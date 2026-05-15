@@ -1,3 +1,5 @@
+let user = null;
+
 // МОДАЛЬНОЕ ОКНО
 
 // Кнопка открытия
@@ -59,7 +61,7 @@ if (!registrationForm.checkValidity()) {
 
 // Создаём объект пользователя
 
-const user = {
+user = {
   имя: firstName,
   фамилия: lastName,
   датаРождения: birthDate,
@@ -68,8 +70,31 @@ const user = {
   датаСоздания: new Date()
 };
 
-window.user = user;
 console.log(`Регистрация успешна:`, user)
 registrationForm.reset();
 modal.classList.remove(`modal-showed`);
+});
+
+// Форма подписки
+
+const subscribeForm = document.querySelector(`.subscribe-form`);
+subscribeForm.addEventListener(`submit`,(event) => {
+  event.preventDefault();
+
+  // Получаем email
+
+  const formData = new FormData(subscribeForm);
+  const email = formData.get(`email`);
+
+  // Проверка валидности
+
+if (!subscribeForm.checkValidity()) {
+  console.log(`Введите корректный email ❌`);
+  return;
+}
+console.log(`Подписка оформлена ✅`,email);
+
+  // Очистка формы
+  
+  subscribeForm.reset();
 });
