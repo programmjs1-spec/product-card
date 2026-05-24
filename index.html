@@ -19,7 +19,44 @@
       <button id="recolor-all-cards-button">Перекрасить фон всех карточек</button>
       <button id="open-google-button">Открыть Google</button>
       <button id="recolor-button" class="green_bg">Перекрась меня</button>
+      <button class="registration-button">Регистрация</button>
     </div>
+    <div class="overlay modal">
+      <div class="modal-window">
+        <button class="modal-close-button">×</button>
+        <h2 class="modal-title">Регистрация</h2>
+        <form action="" class="registration-form">
+          <label>
+            Имя
+            <input type="text" name="firstName" placeholder="Введите имя" required minlength="2">
+          </label>
+          <label>
+            Фамилия
+            <input type="text" name="lastName" placeholder="Введите фамилию" required minlength="2">
+          </label>
+          <label>
+            Дата рождения
+            <input type="date" name="birthDate" required>
+          </label>
+          <label>
+            Логин
+            <input type="text" name="login" placeholder="Введите логин" required minlength="4">
+          </label>
+          <label>
+            Пароль
+            <input type="password" name="password" placeholder="Введите пароль" required minlength="8">
+          </label>
+          <label>
+            Повторите пароль
+            <input type="password" name="repeatPassword" placeholder="Повторите пароль" required minlength="8">
+          </label>
+          <button type="submit" class="registration-submit-button">
+            Зарегистрироваться
+          </button>
+        </form>
+      </div>
+    </div>
+
     <div class="product-card__wrapper">
       <template class="product-card__template">
       <div class="product-card">
@@ -37,11 +74,56 @@
         </div>
       </div>
       </template>
-    </div> 
+    </div>
+
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-left">
+        <h2>Product Cards</h2>
+        <p>У Нас Самые Лучшие Продукты Для Кожи!</p>
+          <div class="footer__socials">
+            <ul class="footer__social-networks">
+              <li class="footer__social-item">
+                <a href="#" target="_blank" rel="noopener noreferrer" class="footer__social-link">
+                <img src="images/tg-icon.svg" alt="Мы в Telegram" class="footer__social-icon">
+                </a>
+              </li>
+              <li class="footer__social-item">
+                <a href="#" target="_blank" rel="noopener noreferrer" class="footer__social-link">
+                <img src="images/vk-icon.svg" alt="Мы в VK" class="footer__social-icon">
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-center">
+        <h3>Подпишись на наши акции!</h3>
+          <form class="subscribe-form">
+            <input id="email" class="footer__form-input" name="email" type="email" placeholder="Введи Email..." required autocomplete="email">
+            <button class="footer__form-button" type="submit">Подписаться</button>
+          </form>
+        </div>
+        <div class="footer-right">
+          <nav class="footer__menu">
+          <p class="footer__menu-title">Быстрые ссылки</p>
+            <ul class="footer__menu-list">
+              <li class="footer__menu-item"><a href="#">Главная</a></li>
+              <li class="footer__menu-item"><a href="#">Магазин</a></li>
+              <li class="footer__menu-item"><a href="#">Контакты</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <div class="footer__link-site">
+        <img src="images/footer-line.svg">
+        <p class="footer__address">www.product-cards.com©all right reserve</p>
+      </div>
+    </footer>
     <script src="/java-script/script.js"></script>
     <script src="/java-script/homework-5.js"></script>
     <script src="/java-script/homework-6.js"></script>
     <script src="/java-script/homework-7.js" type="module"></script>
     <script src="./java-script/homework-8.js" type="module"></script>
+    <script src="./java-script/homework-9.js"></script>
 </body>
 </html>
