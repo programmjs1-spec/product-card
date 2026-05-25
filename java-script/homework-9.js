@@ -28,73 +28,73 @@ closeButton.addEventListener(`click`, () => {
 
 // для регистрации (валидация + объект + лог)
 
-const registrationForm = document.querySelector(`.registration-form`);
+// const registrationForm = document.querySelector(`.registration-form`);
 
-// Добавляем submit обработчик
+// // Добавляем submit обработчик
 
-registrationForm.addEventListener(`submit`, (event) => {
-  event.preventDefault();
+// registrationForm.addEventListener(`submit`, (event) => {
+//   event.preventDefault();
 
 // Берём значения из формы
 
-const formData = new FormData(registrationForm);
-const firstName = formData.get(`firstName`);
-const lastName = formData.get(`lastName`);
-const birthDate = formData.get(`birthDate`);
-const login = formData.get(`login`);
-const password = formData.get(`password`);
-const repeatPassword = formData.get(`repeatPassword`);
+// const formData = new FormData(registrationForm);
+// const firstName = formData.get(`firstName`);
+// const lastName = formData.get(`lastName`);
+// const birthDate = formData.get(`birthDate`);
+// const login = formData.get(`login`);
+// const password = formData.get(`password`);
+// const repeatPassword = formData.get(`repeatPassword`);
 
 // Проверка паролей
 
-if (password !== repeatPassword) {
-  console.log(`Пароли не совпадают ❌`);
-  return;
-}
+// if (password !== repeatPassword) {
+//   console.log(`Пароли не совпадают ❌`);
+//   return;
+// }
 
 // Проверка HTML-валидации
 
-if (!registrationForm.checkValidity()) {
-  console.log(`Форма невалидна ❌ `);
-  return
-}
+// if (!registrationForm.checkValidity()) {
+//   console.log(`Форма невалидна ❌ `);
+//   return
+// }
 
 // Создаём объект пользователя
 
-user = {
-  имя: firstName,
-  фамилия: lastName,
-  датаРождения: birthDate,
-  логин: login,
-  пароль: password,
-  датаСоздания: new Date()
-};
+// user = {
+//   имя: firstName,
+//   фамилия: lastName,
+//   датаРождения: birthDate,
+//   логин: login,
+//   пароль: password,
+//   датаСоздания: new Date()
+// };
 
-console.log(`Регистрация успешна:`, user)
-registrationForm.reset();
-modal.classList.remove(`modal-showed`);
-});
+// console.log(`Регистрация успешна:`, user)
+// registrationForm.reset();
+// modal.classList.remove(`modal-showed`);
+// });
 
 // Форма подписки
 
-const subscribeForm = document.querySelector(`.subscribe-form`);
-subscribeForm.addEventListener(`submit`,(event) => {
-  event.preventDefault();
+// const subscribeForm = document.querySelector(`.subscribe-form`);
+// subscribeForm.addEventListener(`submit`,(event) => {
+//   event.preventDefault();
 
-  // Получаем email
+//   // Получаем email
 
-  const formData = new FormData(subscribeForm);
-  const email = formData.get(`email`);
+//   const formData = new FormData(subscribeForm);
+//   const email = formData.get(`email`);
 
-  // Проверка валидности
+//   // Проверка валидности
 
-if (!subscribeForm.checkValidity()) {
-  console.log(`Введите корректный email ❌`);
-  return;
-}
-console.log(`Подписка оформлена ✅`,email);
+// if (!subscribeForm.checkValidity()) {
+//   console.log(`Введите корректный email ❌`);
+//   return;
+// }
+// console.log(`Подписка оформлена ✅`,email);
 
-  // Очистка формы
+//   // Очистка формы
   
-  subscribeForm.reset();
-});
+//   subscribeForm.reset();
+// });
