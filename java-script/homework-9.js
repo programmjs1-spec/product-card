@@ -4,27 +4,27 @@ let user = null;
 
 // Кнопка открытия
 
-const registrationButton = document.querySelector(`.registration-button`);
+// const registrationButton = document.querySelector(`.registration-button`);
 
-// Модалка
+// // Модалка
 
-const modal = document.querySelector(`.modal`);
+// const modal = document.querySelector(`.modal`);
 
-// Кнопка закрытия
+// // Кнопка закрытия
 
-const closeButton = document.querySelector(`.modal-close-button`);
+// const closeButton = document.querySelector(`.modal-close-button`);
 
-// ОТКРЫТЬ МОДАЛКУ
+// // ОТКРЫТЬ МОДАЛКУ
 
-registrationButton.addEventListener(`click`, () => {
-  modal.classList.add(`modal-showed`);
-});
+// registrationButton.addEventListener(`click`, () => {
+//   modal.classList.add(`modal-showed`);
+// });
 
-// ЗАКРЫТЬ МОДАЛКУ
+// // ЗАКРЫТЬ МОДАЛКУ
 
-closeButton.addEventListener(`click`, () => {
-  modal.classList.remove(`modal-showed`);
-});
+// closeButton.addEventListener(`click`, () => {
+//   modal.classList.remove(`modal-showed`);
+// });
 
 // для регистрации (валидация + объект + лог)
 

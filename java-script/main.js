@@ -33,6 +33,20 @@ document.querySelector('.registration-form').addEventListener('submit', (e) => {
   modal.close()
 })
 
+// SUBSCRIBE FORM
+
+const subscribeForm = new Form('.subscribe-form')
+
+document.querySelector('.subscribe-form').addEventListener('submit', (e) => {
+  e.preventDefault()
+
+  if (!subscribeForm.isValid()) return
+
+  console.log(subscribeForm.getValues())
+
+  subscribeForm.reset()
+})
+
 // CAR
 
 const bmw = new Car('BMW', 220, 'diesel')
