@@ -1,5 +1,9 @@
 class Drink {
   constructor(name, size, price, temperature) {
+    if (new.target === Drink) {
+      throw new Error('Нельзя создать экземпляр класса Drink')
+    }
+    
     this.name = name;
     this.size = size;
     this.price = price;
