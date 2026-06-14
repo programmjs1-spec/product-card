@@ -4,6 +4,7 @@ import './homework-6.js'
 import './homework-7.js'
 import './homework-8.js'
 import './homework-9.js'
+import './homework-11.js'
 
 import Modal from './Modal.js'
 import Form from './Form.js'
