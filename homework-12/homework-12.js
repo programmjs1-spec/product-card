@@ -4,8 +4,6 @@ export class Modal {
     this.overlay = document.querySelector('.registration-overlay');
 
     this.handleOverlayClick = () => this.close();
-
-    this.open(shouldCloseOnOverlay);
   }
 
   open(shouldCloseOnOverlay) {
