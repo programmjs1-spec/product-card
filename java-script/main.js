@@ -11,13 +11,16 @@ import Form from './Form.js'
 import Car from './Car.js'
 import ElectricCar from './ElectricCar.js'
 
+
 // MODAL
 
-const modal = new Modal('.modal')
+let modal
 
 document.querySelector('.registration-button').addEventListener('click', () => {
-  modal.open()
+  modal = new Modal('registration-modal', true)
+  modal.open(true)
 })
+
 
 // FORM
 
@@ -34,6 +37,7 @@ document.querySelector('.registration-form').addEventListener('submit', (e) => {
   modal.close()
 })
 
+
 // SUBSCRIBE FORM
 
 const subscribeForm = new Form('.subscribe-form')
@@ -48,11 +52,13 @@ document.querySelector('.subscribe-form').addEventListener('submit', (e) => {
   subscribeForm.reset()
 })
 
+
 // CAR
 
 const bmw = new Car('BMW', 220, 'diesel')
 console.log(bmw.move())
 console.log(bmw.refuel())
+
 
 // ELECTRIC CAR
 

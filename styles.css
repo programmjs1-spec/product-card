@@ -9,6 +9,10 @@
   display: flow-root;
 }
 
+.registration-overlay {
+  display: none;
+}
+
 .title {
   font-weight: 400;
   font-size: 70px;
@@ -283,6 +287,11 @@
 .modal {
   display: none;
 }
+
+.overlay-showed {
+  display: block;
+}
+
 
 .modal-showed {
   display: flex;
